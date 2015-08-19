@@ -170,9 +170,11 @@ main h2 {
 }
 
 .warning {
-	display: none;
+	/*display: none; - Use this for older browsers that don't support transitions, 
+	you could make the div just appear instead of slide down */
 	position: absolute;
-	top: 53px;
+	top: -57px; /* This should be set to 53px if not sliding down*/
+	-webkit-transition: top 1s ease, opacity 1s;
 	color: white;
 	padding-left: 30px;
 	box-sizing: border-box;

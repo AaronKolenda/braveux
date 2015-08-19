@@ -20,7 +20,10 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 
 			if (nonAlphaNumeric === true && capital === true && sixChars === true && username.length > 0) {
-				warning.style.display = 'none';
+				//Use the following if you want the div to reappear instead of transition:
+				//warning.style.display = 'none';
+				//otherwise use this:
+				fadeOut(warning);
 				passwordWrap.style.border = "none";
 				usernameWrap.style.border = "none";
 				return true;
@@ -75,7 +78,8 @@ function hasUpperCase(string) {
 //notifying the user that their username or password isn't valid
 
 function displayWarning(el, inputel1, inputel2) {
-	el.style.display = 'block';
+	//el.style.display = 'block';
+	slideDown(el);
 	inputel1.style.border = "2px solid rgb(236, 28, 35)";
 	inputel2.style.border = "2px solid rgb(236, 28, 35)";
 }
@@ -94,6 +98,14 @@ function togglePasswordFieldClicked() {
         passwordField.type = 'password';
     }
     passwordField.value = value;
+}
+
+function slideDown(el) {
+	el.style.top = "53px";
+}
+
+function fadeOut(el) {
+	el.style.opacity = "0";
 }
 
 
