@@ -1,0 +1,148 @@
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgb(235, 238, 240);
+}
+
+button {
+	height: 36px;
+	padding: 0px 20px;
+	color: white;
+	background-color: rgb(102, 44, 145);
+	border-radius: 4px;
+	border: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+header {
+	height: 60px;
+	color: white;
+}
+
+input {
+	height: 18px;
+	width: 60%;
+	padding: 6px 12px;
+	background-color: white;
+	border: none;
+	border-radius: 4px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+}
+
+main {
+	padding: 30px;
+	font-size: 14px;
+}
+
+main p {
+	color: rgb(95, 107, 119);
+	font-weight: 600;
+}
+
+main h2 {
+	color: rgb(64, 90, 100);
+}
+
+.button-help {
+	margin-top: 15px;
+}
+
+.help {
+	display: inline-block;
+	float: right;
+	position: relative;
+    top: 10px;
+    color: rgb(97, 107, 118);
+}
+
+.eye {
+	width: 28px;
+	height: 19px;
+	position: relative;
+	top: 5px;
+	left: 15px;
+}
+
+.flag {
+	height: 100px;
+	width: 100px;
+}
+
+.header-main {
+	font-size: 14px;
+	background-color: rgb(160, 0, 143);
+	display: inline-block;
+	width: 65%;
+	color: white;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.header-menu {
+	font-size: 14px;
+	background-color: rgb(114, 0, 146);
+	display: inline-block;
+	width: 35%;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.menu {
+	/*display: none;*/
+	font-size: 16px;
+	font-weight: 600;
+	width: 60%;
+	height: 100%;
+	margin-left: 40%;
+	position: absolute;
+	top: 0px;
+	background-color: rgb(114, 0, 146);
+	z-index: 1;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu p {
+	padding-left: 30px;
+}
+
+.menu-first {
+	padding-bottom: 10px;
+}
+
+.menu-help-about {
+	background-color: rgb(86, 1, 110);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.menu-symbol {
+	font-size: 12px;
+}
+
+.username-wrap, .password-wrap {
+	background-color: white;
+	margin-top: 10px;
+	border-radius: 4px;
+	padding: 3px 10px;
+	color: rgb(115, 145, 157);
+	font-weight: 600;
+	box-sizing: border-box;
+}
+
+.wide {
+	width: 100%;
+}
