@@ -31,6 +31,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	    };
 
+		var menuImg = document.getElementsByClassName("menu-img");
+		var menuOne = menuImg[0];
+		var menuTwo = menuImg[1];
+		console.log(menuOne, menuTwo);
+	    var menu = document.getElementById("menu");
+
+	    menuOne.onclick = function(){
+	    	menu.style.display = 'block';
+	    }
+
+	    menuTwo.onclick = function(){
+	    	menu.style.display = 'none';
+	    }
 });
 
 function checkAlphaNumeric(string){
