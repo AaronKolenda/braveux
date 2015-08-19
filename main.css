@@ -2,6 +2,11 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 body {
 	font-size: 0px;
 	margin: 0px;
@@ -113,6 +118,11 @@ main h2 {
 	box-sizing: border-box;
 }
 
+.help a {
+	color: rgb(95, 107, 119);
+	font-weight: 600;
+}
+
 .menu {
 	display: none;
 	font-size: 16px;
@@ -125,11 +135,6 @@ main h2 {
 	background-color: rgb(114, 0, 146);
 	z-index: 1;
 	box-shadow: -2px 0px 7px grey;
-}
-
-.menu a {
-	text-decoration: none;
-	color: white;
 }
 
 .menu-img {
