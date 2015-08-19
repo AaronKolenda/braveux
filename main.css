@@ -93,11 +93,12 @@ main h2 {
 	display: inline-block;
 	width: 35%;
 	padding-left: 30px;
+	padding-right: 30px;
 	box-sizing: border-box;
 }
 
 .menu {
-	/*display: none;*/
+	display: none;
 	font-size: 16px;
 	font-weight: 600;
 	width: 60%;
@@ -114,8 +115,15 @@ main h2 {
 	color: white;
 }
 
+.menu-img {
+	height: 17px;
+    width: 17px;
+    float: right;
+}
+
 .menu p {
 	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .menu-first {
@@ -127,10 +135,6 @@ main h2 {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-}
-
-.menu-symbol {
-	font-size: 12px;
 }
 
 .username-wrap, .password-wrap {
