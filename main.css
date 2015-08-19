@@ -165,7 +165,7 @@ main h2 {
 }
 
 .warning {
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	top: 53px;
 	color: white;
