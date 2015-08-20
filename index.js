@@ -44,11 +44,17 @@ document.addEventListener("DOMContentLoaded", function() {
 	    var menu = document.getElementById("menu");
 
 	    menuOne.onclick = function(){
-	    	menu.style.display = 'block';
+	    	//Use the following if you want the div to reappear instead of transition:
+	    	//menu.style.display = 'block';
+	    	//otherwise use this:
+	    	menu.style.marginLeft = '40%';
 	    }
 
 	    menuTwo.onclick = function(){
-	    	menu.style.display = 'none';
+	    	//Use the following if you want the div to disappear instead of transition:
+	    	//menu.style.display = 'none';
+	    	//otherwise use this:
+	    	menu.style.marginLeft = '100%';
 	    }
 
 	    //The following toggles the password input type from password to text when the eye is clicked
@@ -100,12 +106,30 @@ function togglePasswordFieldClicked() {
     passwordField.value = value;
 }
 
+//This function makes the warning div slide down into place
+
 function slideDown(el) {
 	el.style.top = "53px";
 }
 
+//This function makes the warning div fade out after validation of username/password is met
+
 function fadeOut(el) {
 	el.style.opacity = "0";
+	timeoutID = window.setTimeout(function(){resetWarning(el)}, 1000);
+}
+
+/*The next two functions are timed to reset the warning div to it's original place
+after the username/password validation is met, so it can slide back down again
+if the user enters invalid info a second time.*/
+
+function resetWarning(el) {
+	el.style.top = "-57px";
+	timeoutIDW = window.setTimeout(function(){resetOpacity(el)}, 1000);
+}
+
+function resetOpacity(el) {
+	el.style.opacity = "1";
 }
 
 

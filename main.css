@@ -124,12 +124,16 @@ main h2 {
 }
 
 .menu {
-	display: none;
+	/*display: none; - Use this for older browsers that don't support transitions, 
+	you could make the div just appear instead of slide in */
 	font-size: 16px;
 	font-weight: 600;
 	width: 60%;
 	height: 100%;
-	margin-left: 40%;
+	margin-left: 100%;/* This should be set to 40% if not sliding in*/
+	-webkit-transition: margin-left 1s ease;
+	-moz-transition: margin-left 1s ease;
+  	-o-transition: margin-left 1s ease;
 	position: absolute;
 	top: 0px;
 	background-color: rgb(114, 0, 146);
@@ -175,6 +179,8 @@ main h2 {
 	position: absolute;
 	top: -57px; /* This should be set to 53px if not sliding down*/
 	-webkit-transition: top 1s ease, opacity 1s;
+	-moz-transition: top 1s ease, opacity 1s;
+  	-o-transition: top 1s ease, opacity 1s;
 	color: white;
 	padding-left: 30px;
 	box-sizing: border-box;
