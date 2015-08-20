@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	    	//Use the following if you want the div to disappear instead of transition:
 	    	//menu.style.display = 'none';
 	    	//otherwise use this:
-	    	menu.style.marginLeft = '100%';
+	    	menu.style.marginLeft = '105%';
 	    }
 
 	    //The following toggles the password input type from password to text when the eye is clicked
