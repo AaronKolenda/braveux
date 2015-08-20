@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			if (nonAlphaNumeric === true && capital === true && sixChars === true && username.length > 0) {
 				//Use the following if you want the div to reappear instead of transition:
 				//warning.style.display = 'none';
-				//otherwise use this:
+				//otherwise use fadeOut(warning);
 				fadeOut(warning);
 				passwordWrap.style.border = "none";
 				usernameWrap.style.border = "none";
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	    };
 
-	    //The following toggles the menu to appear and disappear
+	    //The following toggles the menu in and out
 
 		var menuImg = document.getElementsByClassName("menu-img");
 		var menuOne = menuImg[0];
@@ -46,14 +46,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	    menuOne.onclick = function(){
 	    	//Use the following if you want the div to reappear instead of transition:
 	    	//menu.style.display = 'block';
-	    	//otherwise use this:
+	    	//otherwise use menu.style.marginLeft = '40%';:
 	    	menu.style.marginLeft = '40%';
 	    }
 
 	    menuTwo.onclick = function(){
 	    	//Use the following if you want the div to disappear instead of transition:
 	    	//menu.style.display = 'none';
-	    	//otherwise use this:
+	    	//otherwise use menu.style.marginLeft = '105%';:
 	    	menu.style.marginLeft = '105%';
 	    }
 
@@ -84,7 +84,7 @@ function hasUpperCase(string) {
 //notifying the user that their username or password isn't valid
 
 function displayWarning(el, inputel1, inputel2) {
-	//el.style.display = 'block';
+	//el.style.display = 'block'; - Use this if not using transitions, otherwise use slideDown(el)
 	slideDown(el);
 	inputel1.style.border = "2px solid rgb(236, 28, 35)";
 	inputel2.style.border = "2px solid rgb(236, 28, 35)";
